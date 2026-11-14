@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="700">
+<rect width="100%" height="100%" fill="white"/>
+<text x="450" y="35" text-anchor="middle" font-size="24">Граф зависимостей</text>
+<line x1="450.0" y1="100.0" x2="566.1807930109421" y2="128.6359935866975" stroke="black" stroke-width="2"/>
+<line x1="450.0" y1="100.0" x2="390.17108392811065" y2="592.7354543565131" stroke="black" stroke-width="2"/>
+<line x1="450.0" y1="100.0" x2="284.2193354398013" y2="537.1276870427753" stroke="black" stroke-width="2"/>
+<line x1="450.0" y1="100.0" x2="216.24593932864633" y2="438.651221760634" stroke="black" stroke-width="2"/>
+<line x1="566.1807930109421" y1="128.6359935866975" x2="655.7459664734141" y2="207.98381331721106" stroke="black" stroke-width="2"/>
+<line x1="566.1807930109421" y1="128.6359935866975" x2="698.1772185245135" y2="319.86582993616923" stroke="black" stroke-width="2"/>
+<line x1="566.1807930109421" y1="128.6359935866975" x2="683.7540606713537" y2="438.65122176063386" stroke="black" stroke-width="2"/>
+<line x1="566.1807930109421" y1="128.6359935866975" x2="615.7806645601988" y2="537.1276870427753" stroke="black" stroke-width="2"/>
+<line x1="566.1807930109421" y1="128.6359935866975" x2="509.8289160718894" y2="592.735454356513" stroke="black" stroke-width="2"/>
+<line x1="216.24593932864633" y1="438.651221760634" x2="201.8227814754865" y2="319.8658299361692" stroke="black" stroke-width="2"/>
+<line x1="216.24593932864633" y1="438.651221760634" x2="244.25403352658574" y2="207.98381331721126" stroke="black" stroke-width="2"/>
+<line x1="216.24593932864633" y1="438.651221760634" x2="333.81920698905793" y2="128.63599358669748" stroke="black" stroke-width="2"/>
+<circle cx="450.0" cy="100.0" r="30" fill="lightblue" stroke="black" stroke-width="2"/>
+<text x="450.0" y="105.0" text-anchor="middle" font-size="14">axios</text>
+<circle cx="566.1807930109421" cy="128.6359935866975" r="30" fill="lightblue" stroke="black" stroke-width="2"/>
+<text x="566.1807930109421" y="133.6359935866975" text-anchor="middle" font-size="14">form-data</text>
+<circle cx="655.7459664734141" cy="207.98381331721106" r="30" fill="lightblue" stroke="black" stroke-width="2"/>
+<text x="655.7459664734141" y="212.98381331721106" text-anchor="middle" font-size="14">hasown</text>
+<circle cx="698.1772185245135" cy="319.86582993616923" r="30" fill="lightblue" stroke="black" stroke-width="2"/>
+<text x="698.1772185245135" y="324.86582993616923" text-anchor="middle" font-size="14">asynckit</text>
+<circle cx="683.7540606713537" cy="438.65122176063386" r="30" fill="lightblue" stroke="black" stroke-width="2"/>
+<text x="683.7540606713537" y="443.65122176063386" text-anchor="middle" font-size="14">mime-types</text>
+<circle cx="615.7806645601988" cy="537.1276870427753" r="30" fill="lightblue" stroke="black" stroke-width="2"/>
+<text x="615.7806645601988" y="542.1276870427753" text-anchor="middle" font-size="14">combined-stream</text>
+<circle cx="509.8289160718894" cy="592.735454356513" r="30" fill="lightblue" stroke="black" stroke-width="2"/>
+<text x="509.8289160718894" y="597.735454356513" text-anchor="middle" font-size="14">es-set-tostringtag</text>
+<circle cx="390.17108392811065" cy="592.7354543565131" r="30" fill="lightblue" stroke="black" stroke-width="2"/>
+<text x="390.17108392811065" y="597.7354543565131" text-anchor="middle" font-size="14">proxy-from-env</text>
+<circle cx="284.2193354398013" cy="537.1276870427753" r="30" fill="lightblue" stroke="black" stroke-width="2"/>
+<text x="284.2193354398013" y="542.1276870427753" text-anchor="middle" font-size="14">follow-redirects</text>
+<circle cx="216.24593932864633" cy="438.651221760634" r="30" fill="lightblue" stroke="black" stroke-width="2"/>
+<text x="216.24593932864633" y="443.651221760634" text-anchor="middle" font-size="14">https-proxy-agent</text>
+<circle cx="201.8227814754865" cy="319.8658299361692" r="30" fill="lightblue" stroke="black" stroke-width="2"/>
+<text x="201.8227814754865" y="324.8658299361692" text-anchor="middle" font-size="14">debug</text>
+<circle cx="244.25403352658574" cy="207.98381331721126" r="30" fill="lightblue" stroke="black" stroke-width="2"/>
+<text x="244.25403352658574" y="212.98381331721126" text-anchor="middle" font-size="14">agent-base</text>
+<circle cx="333.81920698905793" cy="128.63599358669748" r="30" fill="lightblue" stroke="black" stroke-width="2"/>
+<text x="333.81920698905793" y="133.63599358669748" text-anchor="middle" font-size="14">proxy-agent-negotiate</text>
+</svg>
