@@ -12,7 +12,7 @@ def main(argv=None):
     stage_parser.add_argument(
         "--stage",
         type=int,
-        choices=[1],
+        choices=[1, 2],
         default=1,
         help="Номер этапа практической работы"
     )
@@ -37,10 +37,49 @@ def main(argv=None):
             print("Конфигурация успешно загружена.")
             print("Все параметры прошли проверку.")
 
+    # ЭТАП 2. Сбор данных
+        elif stage_args.stage == 2:
+
+            print("\nЭтап 2. Сбор данных")
+            print("--------------------------------")
+
+            # Получаем прямые зависимости заданного пакета
+            dependencies = fetch_package_dependencies(
+                config.package,
+                config.repository
+            )
+
+            # Выводим название анализируемого пакета
+            print(
+                f"\nПрямые зависимости пакета "
+                f"{config.package}:"
+            )
+
+            # Проверяем, есть ли у пакета зависимости
+            if dependencies:
+
+                # Перебираем все зависимости из словаря
+                for number, (name, version) in enumerate(
+                    dependencies.items(),
+                    start=1
+                ):
+
+                    # Выводим номер, название и версию зависимости
+                    print(
+                        f"{number}. {name} — {version}"
+                    )
+
+            else:
+
+                # Если зависимостей нет, выводим сообщение
+                print("У пакета нет прямых зависимостей.")
+
     except SystemExit:
+        # Сохраняем стандартную обработку ошибок argparse
         raise
 
     except Exception as error:
+        # Выводим сообщение, если возникла ошибка
         print(f"\nОшибка выполнения программы: {error}")
 
 

@@ -5,23 +5,24 @@
 import argparse
 from dataclasses import dataclass
 from pathlib import Path
+from urllib.parse import urlparse
 
 
 # Класс для хранения всех параметров программы
 @dataclass
 class Config:
-    package: str #название пакета
-    repository: str  #адрес репозитория или путь к тестовому JSON
-    test_mode: bool  #включён ли тестовый режим
-    test_file: str  
-    output: str  #имя выходного файла
-    max_depth: int  #максимальная глубина обхода
+    package: str
+    repository: str
+    test_mode: bool
+    test_file: str
+    output: str
+    max_depth: int
 
 
 # Функция получения параметров командной строки
 def parse_args(args=None):
 
-    parser = argparse.ArgumentParser( # отвечает за обработку параметров
+    parser = argparse.ArgumentParser(
         description="Построение графа зависимостей npm-пакетов."
     )
 
@@ -32,11 +33,11 @@ def parse_args(args=None):
         help="Имя анализируемого npm-пакета."
     )
 
-    # URL репозитория
+    # URL npm Registry
     parser.add_argument(
         "--repository",
-        default="https://github.com/",
-        help="URL GitHub-репозитория."
+        default="https://registry.npmjs.org",
+        help="URL npm Registry или конкретного npm-пакета."
     )
 
     # Режим тестирования
@@ -57,7 +58,7 @@ def parse_args(args=None):
     parser.add_argument(
         "--output",
         default="dependencies.svg",
-        help="Имя файла с изображением графа."
+        help="Имя выходного файла."
     )
 
     # Максимальная глубина анализа
@@ -95,18 +96,24 @@ def parse_args(args=None):
             f"Тестовый файл не найден: {namespace.test_file}"
         )
 
-    # Проверяем URL репозитория
-    if not namespace.test_mode and not namespace.repository.startswith(
-        ("http://", "https://")
-    ):
-        parser.error(
-            "URL репозитория должен начинаться с http:// или https://."
-        )
+    # Проверяем URL npm Registry,
+    # если программа работает не в тестовом режиме
+    if not namespace.test_mode:
 
-    # Возвращаем настройки в виде объекта Config
+        parsed_url = urlparse(namespace.repository)
+
+        if (
+            parsed_url.scheme not in ("http", "https")
+            or parsed_url.netloc.lower() != "registry.npmjs.org"
+        ):
+            parser.error(
+                "Необходимо указать URL npm Registry."
+            )
+
+    # Создаём объект Config и возвращаем его
     return Config(
         package=namespace.package.strip(),
-        repository=namespace.repository,
+        repository=namespace.repository.rstrip("/"),
         test_mode=namespace.test_mode,
         test_file=namespace.test_file,
         output=namespace.output,
@@ -125,6 +132,7 @@ def print_config(config):
     print(f"test_file = {config.test_file}")
     print(f"output = {config.output}")
     print(f"max_depth = {config.max_depth}")
+
 
     #python -m src.main --stage 1 --package axios
     #python -m src.main --stage 1 --package axios --max-depth -1
