@@ -147,3 +147,72 @@ def fetch_package_dependencies(package_name, repository_url):
 
     # Возвращаем найденные зависимости
     return dependencies
+
+
+# 5. Загрузка тестового графа из JSON-файла
+def load_test_repository(file_path):
+
+    try:
+
+        # Открываем тестовый JSON-файл
+        with open(
+            file_path,
+            "r",
+            encoding="utf-8"
+        ) as file:
+
+            # Преобразуем содержимое JSON в словарь Python
+            data = json.load(file)
+
+    except FileNotFoundError:
+
+        # Если файл не найден, сообщаем об ошибке
+        raise RuntimeError(
+            f"Тестовый файл не найден: {file_path}"
+        )
+
+    except json.JSONDecodeError:
+
+        # Если JSON записан неправильно
+        raise RuntimeError(
+            "Ошибка формата тестового JSON-файла"
+        )
+
+    # Проверяем, что данные являются словарём
+    if not isinstance(data, dict):
+        raise RuntimeError(
+            "Тестовый граф должен быть объектом JSON"
+        )
+
+    # Проверяем названия пакетов и их зависимости
+    for package, dependencies in data.items():
+
+        # Названия пакетов должны быть большими латинскими буквами
+        if not package.isalpha() or not package.isupper():
+            raise RuntimeError(
+                f"Некорректное название пакета: {package}"
+            )
+
+        # Зависимости должны быть списками
+        if not isinstance(dependencies, list):
+            raise RuntimeError(
+                f"Зависимости пакета {package} должны быть списком"
+            )
+
+        # Проверяем каждую зависимость
+        for dependency in dependencies:
+
+            if (
+                not isinstance(dependency, str)
+                or not dependency.isalpha()
+                or not dependency.isupper()
+            ):
+                raise RuntimeError(
+                    f"Некорректное название зависимости: {dependency}"
+                )
+
+    # Возвращаем проверенный граф
+    return data
+
+
+#python -m src.main --stage 2 --package axios

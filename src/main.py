@@ -2,7 +2,8 @@
 import argparse
 
 from .config import parse_args, print_config
-
+from .fetcher import fetch_package_dependencies
+from .graph import build_graph
 
 def main(argv=None):
 
@@ -12,7 +13,7 @@ def main(argv=None):
     stage_parser.add_argument(
         "--stage",
         type=int,
-        choices=[1, 2],
+        choices=[1, 2, 3],
         default=1,
         help="Номер этапа практической работы"
     )
@@ -37,7 +38,7 @@ def main(argv=None):
             print("Конфигурация успешно загружена.")
             print("Все параметры прошли проверку.")
 
-    # ЭТАП 2. Сбор данных
+        # ЭТАП 2. Сбор данных
         elif stage_args.stage == 2:
 
             print("\nЭтап 2. Сбор данных")
@@ -72,7 +73,46 @@ def main(argv=None):
             else:
 
                 # Если зависимостей нет, выводим сообщение
-                print("У пакета нет прямых зависимостей.")
+                print("У пакета нет прямых зависимостей")
+           
+        
+        # ЭТАП 3. Построение графа зависимостей
+        elif stage_args.stage == 3:
+
+            print("\nЭтап 3. Построение графа зависимостей")
+            print("--------------------------------")
+
+            # Строим граф с учётом максимальной глубины
+            graph, cycles = build_graph(config)
+
+            # Выводим полученный граф
+            print("\nПостроенный граф:")
+
+            for package, dependencies in graph.items():
+
+                print(
+                    f"{package} -> {dependencies}"
+                )
+
+            # Проверяем наличие циклических зависимостей
+            if cycles:
+
+                print("\nОбнаружены циклические зависимости:")
+
+                # Выводим каждое циклическое ребро
+                for source, target in sorted(cycles):
+
+                    print(
+                        f"{source} -> {target}"
+                    )
+
+            else:
+
+                print(
+                    "\nЦиклические зависимости не обнаружены"
+                )
+
+            print("\nПостроение графа завершено")
 
     except SystemExit:
         # Сохраняем стандартную обработку ошибок argparse
@@ -85,3 +125,4 @@ def main(argv=None):
 
 if __name__ == "__main__":
     main()
+
