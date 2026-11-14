@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="700">
+<rect width="100%" height="100%" fill="white"/>
+<text x="450" y="35" text-anchor="middle" font-size="24">Граф зависимостей</text>
+<line x1="450.0" y1="100.0" x2="507.65396768561004" y2="106.73878235504404" stroke="black" stroke-width="2"/>
+<line x1="450.0" y1="100.0" x2="200.42296043218295" y2="364.53620722761906" stroke="black" stroke-width="2"/>
+<line x1="450.0" y1="100.0" x2="203.79806174694804" y2="306.5879555832673" stroke="black" stroke-width="2"/>
+<line x1="450.0" y1="100.0" x2="220.44597327993148" y2="250.98005849021087" stroke="black" stroke-width="2"/>
+<line x1="507.65396768561004" y1="106.73878235504404" x2="562.1997950501155" y2="126.59183991914696" stroke="black" stroke-width="2"/>
+<line x1="507.65396768561004" y1="106.73878235504404" x2="650.530798188761" y2="200.71035207430344" stroke="black" stroke-width="2"/>
+<line x1="507.65396768561004" y1="106.73878235504404" x2="679.5540267200685" y2="250.9800584902108" stroke="black" stroke-width="2"/>
+<line x1="507.65396768561004" y1="106.73878235504404" x2="699.5770395678171" y2="364.53620722761895" stroke="black" stroke-width="2"/>
+<line x1="507.65396768561004" y1="106.73878235504404" x2="666.5063509461097" y2="474.99999999999994" stroke="black" stroke-width="2"/>
+<line x1="562.1997950501155" y1="126.59183991914696" x2="610.6969024216348" y2="158.4888892202555" stroke="black" stroke-width="2"/>
+<line x1="679.5540267200685" y1="250.9800584902108" x2="696.201938253052" y2="306.5879555832674" stroke="black" stroke-width="2"/>
+<line x1="699.5770395678171" y1="364.53620722761895" x2="689.4973780788722" y2="421.70080817777256" stroke="black" stroke-width="2"/>
+<line x1="666.5063509461097" y1="474.99999999999994" x2="562.1997950501155" y2="126.59183991914696" stroke="black" stroke-width="2"/>
+<line x1="666.5063509461097" y1="474.99999999999994" x2="631.8434103932623" y2="521.5604094671834" stroke="black" stroke-width="2"/>
+<line x1="666.5063509461097" y1="474.99999999999994" x2="587.3772445177016" y2="558.8719528532341" stroke="black" stroke-width="2"/>
+<line x1="666.5063509461097" y1="474.99999999999994" x2="210.5026219211278" y2="421.7008081777726" stroke="black" stroke-width="2"/>
+<line x1="587.3772445177016" y1="558.8719528532341" x2="535.5050358314172" y2="584.9231551964771" stroke="black" stroke-width="2"/>
+<line x1="587.3772445177016" y1="558.8719528532341" x2="562.1997950501155" y2="126.59183991914696" stroke="black" stroke-width="2"/>
+<line x1="587.3772445177016" y1="558.8719528532341" x2="631.8434103932623" y2="521.5604094671834" stroke="black" stroke-width="2"/>
+<line x1="587.3772445177016" y1="558.8719528532341" x2="479.02322853130744" y2="598.3095894354858" stroke="black" stroke-width="2"/>
+<line x1="587.3772445177016" y1="558.8719528532341" x2="420.97677146869245" y2="598.3095894354858" stroke="black" stroke-width="2"/>
+<line x1="587.3772445177016" y1="558.8719528532341" x2="610.6969024216348" y2="158.4888892202555" stroke="black" stroke-width="2"/>
+<line x1="587.3772445177016" y1="558.8719528532341" x2="364.49496416858295" y2="584.9231551964772" stroke="black" stroke-width="2"/>
+<line x1="587.3772445177016" y1="558.8719528532341" x2="312.6227554822985" y2="558.8719528532341" stroke="black" stroke-width="2"/>
+<line x1="587.3772445177016" y1="558.8719528532341" x2="268.15658960673784" y2="521.5604094671834" stroke="black" stroke-width="2"/>
+<line x1="587.3772445177016" y1="558.8719528532341" x2="233.49364905389038" y2="475.0000000000001" stroke="black" stroke-width="2"/>
+<line x1="210.5026219211278" y1="421.7008081777726" x2="420.97677146869245" y2="598.3095894354858" stroke="black" stroke-width="2"/>
+<line x1="220.44597327993148" y1="250.98005849021087" x2="249.469201811239" y2="200.7103520743035" stroke="black" stroke-width="2"/>
+<line x1="220.44597327993148" y1="250.98005849021087" x2="337.8002049498844" y2="126.59183991914696" stroke="black" stroke-width="2"/>
+<line x1="220.44597327993148" y1="250.98005849021087" x2="392.34603231439013" y2="106.73878235504398" stroke="black" stroke-width="2"/>
+<line x1="249.469201811239" y1="200.7103520743035" x2="289.30309757836517" y2="158.48888922025552" stroke="black" stroke-width="2"/>
+<circle cx="450.0" cy="100.0" r="30" fill="lightblue" stroke="black" stroke-width="2"/>
+<text x="450.0" y="105.0" text-anchor="middle" font-size="14">axios</text>
+<circle cx="507.65396768561004" cy="106.73878235504404" r="30" fill="lightblue" stroke="black" stroke-width="2"/>
+<text x="507.65396768561004" y="111.73878235504404" text-anchor="middle" font-size="14">form-data</text>
+<circle cx="562.1997950501155" cy="126.59183991914696" r="30" fill="lightblue" stroke="black" stroke-width="2"/>
+<text x="562.1997950501155" y="131.59183991914696" text-anchor="middle" font-size="14">hasown</text>
+<circle cx="610.6969024216348" cy="158.4888892202555" r="30" fill="lightblue" stroke="black" stroke-width="2"/>
+<text x="610.6969024216348" y="163.4888892202555" text-anchor="middle" font-size="14">function-bind</text>
+<circle cx="650.530798188761" cy="200.71035207430344" r="30" fill="lightblue" stroke="black" stroke-width="2"/>
+<text x="650.530798188761" y="205.71035207430344" text-anchor="middle" font-size="14">asynckit</text>
+<circle cx="679.5540267200685" cy="250.9800584902108" r="30" fill="lightblue" stroke="black" stroke-width="2"/>
+<text x="679.5540267200685" y="255.9800584902108" text-anchor="middle" font-size="14">mime-types</text>
+<circle cx="696.201938253052" cy="306.5879555832674" r="30" fill="lightblue" stroke="black" stroke-width="2"/>
+<text x="696.201938253052" y="311.5879555832674" text-anchor="middle" font-size="14">mime-db</text>
+<circle cx="699.5770395678171" cy="364.53620722761895" r="30" fill="lightblue" stroke="black" stroke-width="2"/>
+<text x="699.5770395678171" y="369.53620722761895" text-anchor="middle" font-size="14">combined-stream</text>
+<circle cx="689.4973780788722" cy="421.70080817777256" r="30" fill="lightblue" stroke="black" stroke-width="2"/>
+<text x="689.4973780788722" y="426.70080817777256" text-anchor="middle" font-size="14">delayed-stream</text>
+<circle cx="666.5063509461097" cy="474.99999999999994" r="30" fill="lightblue" stroke="black" stroke-width="2"/>
+<text x="666.5063509461097" y="479.99999999999994" text-anchor="middle" font-size="14">es-set-tostringtag</text>
+<circle cx="631.8434103932623" cy="521.5604094671834" r="30" fill="lightblue" stroke="black" stroke-width="2"/>
+<text x="631.8434103932623" y="526.5604094671834" text-anchor="middle" font-size="14">es-errors</text>
+<circle cx="587.3772445177016" cy="558.8719528532341" r="30" fill="lightblue" stroke="black" stroke-width="2"/>
+<text x="587.3772445177016" y="563.8719528532341" text-anchor="middle" font-size="14">get-intrinsic</text>
+<circle cx="535.5050358314172" cy="584.9231551964771" r="30" fill="lightblue" stroke="black" stroke-width="2"/>
+<text x="535.5050358314172" y="589.9231551964771" text-anchor="middle" font-size="14">gopd</text>
+<circle cx="479.02322853130744" cy="598.3095894354858" r="30" fill="lightblue" stroke="black" stroke-width="2"/>
+<text x="479.02322853130744" y="603.3095894354858" text-anchor="middle" font-size="14">get-proto</text>
+<circle cx="420.97677146869245" cy="598.3095894354858" r="30" fill="lightblue" stroke="black" stroke-width="2"/>
+<text x="420.97677146869245" y="603.3095894354858" text-anchor="middle" font-size="14">has-symbols</text>
+<circle cx="364.49496416858295" cy="584.9231551964772" r="30" fill="lightblue" stroke="black" stroke-width="2"/>
+<text x="364.49496416858295" y="589.9231551964772" text-anchor="middle" font-size="14">es-object-atoms</text>
+<circle cx="312.6227554822985" cy="558.8719528532341" r="30" fill="lightblue" stroke="black" stroke-width="2"/>
+<text x="312.6227554822985" y="563.8719528532341" text-anchor="middle" font-size="14">math-intrinsics</text>
+<circle cx="268.15658960673784" cy="521.5604094671834" r="30" fill="lightblue" stroke="black" stroke-width="2"/>
+<text x="268.15658960673784" y="526.5604094671834" text-anchor="middle" font-size="14">es-define-property</text>
+<circle cx="233.49364905389038" cy="475.0000000000001" r="30" fill="lightblue" stroke="black" stroke-width="2"/>
+<text x="233.49364905389038" y="480.0000000000001" text-anchor="middle" font-size="14">call-bind-apply-helpers</text>
+<circle cx="210.5026219211278" cy="421.7008081777726" r="30" fill="lightblue" stroke="black" stroke-width="2"/>
+<text x="210.5026219211278" y="426.7008081777726" text-anchor="middle" font-size="14">has-tostringtag</text>
+<circle cx="200.42296043218295" cy="364.53620722761906" r="30" fill="lightblue" stroke="black" stroke-width="2"/>
+<text x="200.42296043218295" y="369.53620722761906" text-anchor="middle" font-size="14">proxy-from-env</text>
+<circle cx="203.79806174694804" cy="306.5879555832673" r="30" fill="lightblue" stroke="black" stroke-width="2"/>
+<text x="203.79806174694804" y="311.5879555832673" text-anchor="middle" font-size="14">follow-redirects</text>
+<circle cx="220.44597327993148" cy="250.98005849021087" r="30" fill="lightblue" stroke="black" stroke-width="2"/>
+<text x="220.44597327993148" y="255.98005849021087" text-anchor="middle" font-size="14">https-proxy-agent</text>
+<circle cx="249.469201811239" cy="200.7103520743035" r="30" fill="lightblue" stroke="black" stroke-width="2"/>
+<text x="249.469201811239" y="205.7103520743035" text-anchor="middle" font-size="14">debug</text>
+<circle cx="289.30309757836517" cy="158.48888922025552" r="30" fill="lightblue" stroke="black" stroke-width="2"/>
+<text x="289.30309757836517" y="163.48888922025552" text-anchor="middle" font-size="14">ms</text>
+<circle cx="337.8002049498844" cy="126.59183991914696" r="30" fill="lightblue" stroke="black" stroke-width="2"/>
+<text x="337.8002049498844" y="131.59183991914696" text-anchor="middle" font-size="14">agent-base</text>
+<circle cx="392.34603231439013" cy="106.73878235504398" r="30" fill="lightblue" stroke="black" stroke-width="2"/>
+<text x="392.34603231439013" y="111.73878235504398" text-anchor="middle" font-size="14">proxy-agent-negotiate</text>
+</svg>
