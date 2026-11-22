@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="800" viewBox="0 0 1100 800">
+<rect width="100%" height="100%" fill="white"/>
+<text x="550" y="40" text-anchor="middle" font-size="26" font-weight="bold">Граф зависимостей</text>
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="black"/></marker></defs>
+<line x1="550.0" y1="120.0" x2="680.1224881722552" y2="152.07231281710122" stroke="black" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="550.0" y1="120.0" x2="482.9916139994839" y2="671.8637088792946" stroke="black" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="550.0" y1="120.0" x2="364.3256556925774" y2="609.5830094879084" stroke="black" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="550.0" y1="120.0" x2="288.1954520480839" y2="499.28936837191003" stroke="black" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="680.1224881722552" y1="152.07231281710122" x2="780.4354824502238" y2="240.94187091527638" stroke="black" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="680.1224881722552" y1="152.07231281710122" x2="827.958484747455" y2="366.2497295285096" stroke="black" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="680.1224881722552" y1="152.07231281710122" x2="811.8045479519162" y2="499.28936837191" stroke="black" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="680.1224881722552" y1="152.07231281710122" x2="735.6743443074226" y2="609.5830094879084" stroke="black" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="680.1224881722552" y1="152.07231281710122" x2="617.0083860005161" y2="671.8637088792946" stroke="black" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="288.1954520480839" y1="499.28936837191003" x2="272.0415152525449" y2="366.2497295285095" stroke="black" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="288.1954520480839" y1="499.28936837191003" x2="319.56451754977604" y2="240.9418709152766" stroke="black" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="288.1954520480839" y1="499.28936837191003" x2="419.87751182774485" y2="152.0723128171012" stroke="black" stroke-width="2" marker-end="url(#arrow)"/>
+<circle cx="550.0" cy="120.0" r="40" fill="lightblue" stroke="black" stroke-width="2"/>
+<text x="550.0" y="125.0" text-anchor="middle" font-size="12">axios</text>
+<circle cx="680.1224881722552" cy="152.07231281710122" r="40" fill="lightblue" stroke="black" stroke-width="2"/>
+<text x="680.1224881722552" y="157.07231281710122" text-anchor="middle" font-size="12">form-data</text>
+<circle cx="780.4354824502238" cy="240.94187091527638" r="40" fill="lightblue" stroke="black" stroke-width="2"/>
+<text x="780.4354824502238" y="245.94187091527638" text-anchor="middle" font-size="12">hasown</text>
+<circle cx="827.958484747455" cy="366.2497295285096" r="40" fill="lightblue" stroke="black" stroke-width="2"/>
+<text x="827.958484747455" y="371.2497295285096" text-anchor="middle" font-size="12">asynckit</text>
+<circle cx="811.8045479519162" cy="499.28936837191" r="40" fill="lightblue" stroke="black" stroke-width="2"/>
+<text x="811.8045479519162" y="504.28936837191" text-anchor="middle" font-size="12">mime-types</text>
+<circle cx="735.6743443074226" cy="609.5830094879084" r="40" fill="lightblue" stroke="black" stroke-width="2"/>
+<text x="735.6743443074226" y="614.5830094879084" text-anchor="middle" font-size="12">combined-stream</text>
+<circle cx="617.0083860005161" cy="671.8637088792946" r="40" fill="lightblue" stroke="black" stroke-width="2"/>
+<text x="617.0083860005161" y="676.8637088792946" text-anchor="middle" font-size="12">es-set-tostringtag</text>
+<circle cx="482.9916139994839" cy="671.8637088792946" r="40" fill="lightblue" stroke="black" stroke-width="2"/>
+<text x="482.9916139994839" y="676.8637088792946" text-anchor="middle" font-size="12">proxy-from-env</text>
+<circle cx="364.3256556925774" cy="609.5830094879084" r="40" fill="lightblue" stroke="black" stroke-width="2"/>
+<text x="364.3256556925774" y="614.5830094879084" text-anchor="middle" font-size="12">follow-redirects</text>
+<circle cx="288.1954520480839" cy="499.28936837191003" r="40" fill="lightblue" stroke="black" stroke-width="2"/>
+<text x="288.1954520480839" y="504.28936837191003" text-anchor="middle" font-size="12">https-proxy-agent</text>
+<circle cx="272.0415152525449" cy="366.2497295285095" r="40" fill="lightblue" stroke="black" stroke-width="2"/>
+<text x="272.0415152525449" y="371.2497295285095" text-anchor="middle" font-size="12">debug</text>
+<circle cx="319.56451754977604" cy="240.9418709152766" r="40" fill="lightblue" stroke="black" stroke-width="2"/>
+<text x="319.56451754977604" y="245.9418709152766" text-anchor="middle" font-size="12">agent-base</text>
+<circle cx="419.87751182774485" cy="152.0723128171012" r="40" fill="lightblue" stroke="black" stroke-width="2"/>
+<text x="419.87751182774485" y="157.0723128171012" text-anchor="middle" font-size="12">proxy-agent-negotiate</text>
+</svg>

@@ -93,3 +93,10 @@ def calculate_loading_order(graph):
 #python -m src.main --stage 4 --package A --test-mode --test-file test_data/repository_empty.json --max-depth 2
 #python -m src.main --stage 4 --package A --test-mode --test-file test_data/repository_no_cycle.json --max-depth 3
 #python -m src.main --stage 4 --package axios --max-depth 2
+
+
+#cd 'c:\Users\Windows\OneDrive\Desktop\2 работа конф упр\npm-check'
+#Показать дерево зависимостей:
+#npm.cmd ls --all
+#Показать только axios
+#npm.cmd ls axios --all

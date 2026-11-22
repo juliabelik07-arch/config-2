@@ -165,3 +165,4 @@ def find_cycles(graph):
 #python -m src.main --stage 3 --package A --test-mode --test-file test_data/repository_empty.json --max-depth 2
 #python -m src.main --stage 3 --package A --test-mode --test-file test_data/repository_no_cycle.json --max-depth 3
 #python -m src.main --stage 3 --package axios --max-depth 2
+#python -m src.main --stage 3 --package express --max-depth 2

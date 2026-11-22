@@ -1,4 +1,3 @@
-
 # ЭТАП 2. Сбор данных
 # Файл отвечает за получение информации о npm-пакетах
 # и извлечение их прямых зависимостей.
@@ -10,7 +9,7 @@ import urllib.error
 from urllib.parse import quote, urlparse, unquote
 
 
-# 1. Получение JSON-данных по URL
+# 1. Получение JSON-данных по URL 
 def get_json(url):
 
     # Создаём HTTP-запрос к серверу
@@ -68,7 +67,6 @@ def get_package_info(package_name, repository_url):
     parsed = urlparse(repository_url)
 
     # Кодируем имя пакета для использования в URL
-    # Это необходимо, например, для пакетов с символом @
     encoded_name = quote(package_name, safe="@")
 
     # Получаем путь из URL и декодируем его
@@ -216,3 +214,6 @@ def load_test_repository(file_path):
 
 
 #python -m src.main --stage 2 --package axios
+#python -m src.main --stage 2 --package express
+#python -m src.main --stage 2 --package react
+#python -m src.main --stage 2 --package debug
