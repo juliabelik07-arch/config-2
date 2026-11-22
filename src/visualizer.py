@@ -1,4 +1,4 @@
-# ЭТАП 3. Визуализация графа зависимостей
+# Этап 5. Визуализация
 # Файл отвечает за создание изображения графа в формате SVG.
 
 
@@ -103,10 +103,7 @@ def visualize_graph(graph, cycles, output):
 
     print(f"Mermaid-код сохранён: {mermaid_path}")
 
-    # ------------------------------------------------
-    # ЧАСТЬ 2. СОЗДАНИЕ SVG-ИЗОБРАЖЕНИЯ
-    # ------------------------------------------------
-
+    
     # Задаём размеры изображения
     width = 1100
     height = 800
@@ -211,3 +208,7 @@ def visualize_graph(graph, cycles, output):
     )
 
     print(f"SVG-граф сохранён: {output_path}")
+
+#python -m src.main --stage 3 --package lodash --max-depth 2 --output dependencies-lodash.svg
+#python -m src.main --stage 3 --package chalk --max-depth 2 --output dependencies-chalk.svg
+#python -m src.main --stage 3 --package axios --max-depth 2 --output dependencies-axios.svg
